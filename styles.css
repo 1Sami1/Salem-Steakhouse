@@ -154,19 +154,49 @@ body {
     height: 50vh;
     position: relative;
 }
-.hero-image{
+
+@media (min-width: 1000px) {
+  .hero-section{
+    height: 100vh;
+  }
+  
+}
+/* .hero-image{
     width: 100%;
     max-width: 100%;
     position: absolute;
     height: 100%;
     top: 0;
     z-index: -5;
-}
+} */
 
+.hero-bg{
+  background-image: url(./media/jason-leung-poI7DelFiVA-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+    max-width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: -5;
+}
+.hero-image-overlay{
+  height: 50vh;
+  background-color: #122940;
+  opacity: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -3;
+
+}
 .hero-text{
     text-align: center;
-    
+    position: relative;
+    top: 25%;
     font-family: "espoir";
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
     h3{
         margin: 0;
     }
