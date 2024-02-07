@@ -155,12 +155,8 @@ body {
     position: relative;
 }
 
-@media (min-width: 1000px) {
-  .hero-section{
-    height: 100vh;
-  }
-  
-}
+
+
 /* .hero-image{
     width: 100%;
     max-width: 100%;
@@ -197,13 +193,47 @@ body {
     top: 25%;
     font-family: "espoir";
     text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
-    h3{
+    .hero-h3{
         margin: 0;
+        font-size: 1.5rem;
+    }
+    .hero-h1{
+      font-size: 4rem;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .hero-h4{
+      margin: 0;
     }
 }
 
 
-
+@media (min-width: 1000px) {
+  .hero-section{
+    height: 100vh;
+  }
+  .hero-text{
+    top: 30%;
+    .hero-h3{
+      font-size: 2rem;
+    }
+    .hero-h1{
+      font-size: 6rem;
+    }
+    .hero-h4{
+      font-size: 1.5rem;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .hero-text{
+    .hero-h1{
+    font-size: 10rem;
+  }
+  }
+  
+  
+}
   /* ============== Tile Section Styles ==============*/
 
 
