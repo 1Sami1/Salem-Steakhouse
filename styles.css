@@ -172,13 +172,25 @@ body {
     }
 }
 
-.tile-section{
-    img{
-        width: 200px;
-    }
-}
 
 
   /* ============== Tile Section Styles ==============*/
 
-  
+
+.tile-section{
+    padding: 1rem;
+    img{
+        width: 100%;
+    }
+}
+
+.tile{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    font-family: "Espoir";
+    font-size: 4rem;
+    text-transform: uppercase;
+    top: 50%;
+}
