@@ -178,19 +178,56 @@ body {
 
 
 .tile-section{
-    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     img{
-        width: 100%;
+        width: 200px;
+        height: 140px;
+        border-radius: 20px;
     }
 }
 
 .tile{
     position: relative;
+    display: inline-block;
+    padding: 1rem;
+    
 }
 .overlay{
     position: absolute;
-    font-family: "Espoir";
-    font-size: 4rem;
-    text-transform: uppercase;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Espoir";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    left: 50%;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+@media (min-width: 600px) {
+    .tile-section{
+      img{
+        width: 300px;
+        height: 220px;
+      }
+    }
+    .overlay{
+      font-size: 3rem;
+    }
+}
+@media (min-width: 1200px) {
+  .tile-section{
+    img{
+      width: 410px;
+      height: 345px;
+    }
+  }
+  .tile{
+    padding: 2rem;
+  }
+  .overlay{
+    font-size: 4rem;
+  }
 }
