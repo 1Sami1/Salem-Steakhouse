@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Futura PT', sans-serif;
+    font-size: 1.5rem;
     background-color: #122940;
     color: #CF9D3A;
 }
@@ -158,8 +159,6 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
 }
 
-
-
 /* .hero-image{
     width: 100%;
     max-width: 100%;
@@ -170,7 +169,7 @@ h1,h2,h3,h4,h5,h6{
 } */
 
 .hero-bg{
-  background-image: url(./media/jason-leung-poI7DelFiVA-unsplash.jpg);
+  background-image: url(./media/headers/jason-leung-poI7DelFiVA-unsplash.jpg);
   background-size: cover;
   width: 100%;
     max-width: 100%;
@@ -237,6 +236,7 @@ h1,h2,h3,h4,h5,h6{
   
   
 }
+
   /* ============== Tile Section Styles ==============*/
 
 
@@ -406,4 +406,212 @@ h1,h2,h3,h4,h5,h6{
 
 .footer_nav_ul a:hover {
   color: #b3ff5c;
+}
+
+  /* ============== Header Styles ==============*/
+
+.header-section{
+  height: 50vh;
+  position: relative;
+}
+
+.header-image-overlay{
+  height: 50vh;
+  background-color: #122940;
+  opacity: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -3;
+
+}
+.header-text{
+  text-align: center;
+  position: relative;
+  top: 25%;
+  font-family: "espoir";
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.header-h1{
+  font-size: 4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 400px) {
+  .header-section{
+    height: 20vh;
+  }
+}
+@media (min-width: 1000px) {
+  .header-section{
+    height: 50vh;
+  }
+  .header-text{
+    top: 30%;
+    .header-h1{
+      font-size: 6rem;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .header-text{
+    .header-h1{
+    font-size: 10rem;
+    }
+  }
+}
+
+  /* ============== About Page Styles ==============*/
+
+.AboutHeader-bg{
+  background-image: url(./media/headers/jesson-mata-I2Erl2cU_A4-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+.welcome-h2{
+  text-align: left;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.welcome-p{
+  margin-bottom: 4rem;
+}
+
+.welcome-btn{
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery-section{
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.gallery-h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.gallery-image{
+  width: 300px;
+  border-radius: 30px;
+}
+
+.welcome-btn{
+  margin-top: 2rem;
+  background-color: #CF9D3A;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  
+  a{
+    text-decoration: none;
+    color: #282a3e;
+  }
+}
+
+@media (min-width: 400px) {
+  .welcome-section {
+    margin: 10vh 5vw;
+  }
+}
+@media (min-width: 600px) {
+  .gallery-h2{
+    font-size: 3.2rem;
+  }
+  .gallery-image{
+    width: 500px;
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .welcome-section {
+    margin: 10vh 27vw;
+  }
+  .gallery-image{
+    width: 900px;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ============== Careers Page Styles ==============*/
+
+.CareersHeader-bg{
+  background-image: url(./media/headers/AdobeStock_626472323.jpeg);
+  background-size: cover;
+  background-position: 0 90%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+.careers-h2{
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.careers-h3{
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+
+.careers-desc{
+  display: inline-block;
+  width: 50%;
+  margin-top: -1rem;
+}
+
+.careers-info{
+  display: inline-block;
+  width: 40%;
+  float: right;
+  margin-top: -1rem;
+}
+
+.careers-btn{
+  margin-top: -5rem;
+  background-color: #CF9D3A;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  float: right;
+
+  a{
+    text-decoration: none;
+    color: #282a3e;
+  }
+}
+
+.careers-card{
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 400px) {
+  .careers-section {
+    margin: 10vh 8vw 0vh 5vw;
+  }
+}
+@media (min-width: 1000px) {
+  .careers-section {
+    margin: 10vh 27vw;
+  }
 }
