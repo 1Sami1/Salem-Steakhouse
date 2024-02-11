@@ -34,7 +34,7 @@ a{
     width: 70px;
     margin-left: 100px;
     img{
-        width: 70px;
+        width: 90px;
     }
 }
 .nav-ul{
@@ -69,7 +69,9 @@ a{
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: #fff;
+    background-color: #CF9D3A;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+
     position: absolute;
     height: 6px;
     width: 32px;
@@ -162,15 +164,6 @@ a{
     height: 50vh;
     position: relative;
 }
-
-/* .hero-image{
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: -5;
-} */
 
 .hero-bg{
   background-image: url(./media/headers/jason-leung-poI7DelFiVA-unsplash.jpg);
