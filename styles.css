@@ -421,8 +421,11 @@ a{
   /* ============== Page Header Styles ==============*/
 
 .header-section{
-  height: 50vh;
+  height: 30vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-image-overlay{
@@ -437,17 +440,14 @@ a{
 
 }
 .header-text{
-  text-align: center;
-  position: relative;
-  top: 25%;
   font-family: "espoir";
   text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }
 
 .header-h1{
   font-size: 4rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
 }
 
 @media (min-width: 400px) {
@@ -457,7 +457,7 @@ a{
 }
 @media (min-width: 1000px) {
   .header-section{
-    height: 50vh;
+    height: 40vh;
   }
   .header-text{
     top: 30%;
@@ -469,7 +469,7 @@ a{
 @media (min-width: 1500px) {
   .header-text{
     .header-h1{
-    font-size: 10rem;
+    font-size: 6rem;
     }
   }
 }
