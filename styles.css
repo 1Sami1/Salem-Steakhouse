@@ -662,11 +662,36 @@ a{
 }
 
 .food-item{
+  padding: 20px;
+  margin: 0 2rem;
   img{
     width: 100%;
+    border-radius: 20px;
+  }
+  h4{
+    margin: 0;
+    margin-top: 20px;
+  }
+  p{
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 200;
+  }
+  .price-p{
+    font-weight: 700;
   }
 }
 
+.food-item-text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (min-width: 600px) {
+  .food-item{
+    margin: 0 4rem;
+  }
+}
 @media (min-width: 1024px) {
   .menus-section{
     margin-bottom: 8rem;
@@ -674,6 +699,17 @@ a{
       line-height: 60%;
       font-size: 1.7rem;
     }
+  }
+  .chefs-reco-section{
+    h1{
+      font-size: 4rem;
+      margin-bottom: 5rem;
+    }
+  }
+  .food-item{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 3.5rem;
   }
  
 }
