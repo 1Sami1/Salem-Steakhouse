@@ -9,6 +9,10 @@ body {
 h1,h2,h3,h4,h5,h6{
   font-family: "Espoir";
 }
+a{
+  font-family: 'Futura PT', sans-serif;
+
+}
 
 
 /* ============== Header Styles ==============*/
@@ -23,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: row;
 }
 .nav-ul a:hover{
-    color: #b3ff5c;
+    color: #fff;
     cursor: pointer;
 }
 .header-logo{
@@ -133,7 +137,7 @@ h1,h2,h3,h4,h5,h6{
       border: 0;
     }
     #menu-toggle:checked ~ .nav-ul li {
-      border: 0.5px solid #b3ff5c;
+      border: 0.5px solid #CF9D3A;
       height: 2.5em;
       padding: 0.5em;
     }
@@ -145,7 +149,7 @@ h1,h2,h3,h4,h5,h6{
       /* padding: 0.5em 0; */
       width: 100%;
       color: black;
-      background-color: #282a3e;
+      background-color: #122940;
     }
     .nav-ul > li:not(:last-child) {
       border-bottom: 1px solid #444;
