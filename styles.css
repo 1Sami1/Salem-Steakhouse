@@ -642,3 +642,38 @@ a{
   z-index: -5;
 }
 
+.menus-section{
+  text-align: center;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  a{
+    line-height: 2rem;
+    color: #CF9D3A;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+  }
+}
+
+.chefs-reco-section{
+  h1{
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+    margin-bottom: 3rem;
+  }
+}
+
+.food-item{
+  img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menus-section{
+    margin-bottom: 8rem;
+    a{
+      line-height: 60%;
+      font-size: 1.7rem;
+    }
+  }
+ 
+}
