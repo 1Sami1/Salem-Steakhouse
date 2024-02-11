@@ -418,7 +418,7 @@ a{
   color: white;
 }
 
-  /* ============== Page Header Styles ==============*/
+  /* ============== About Page Header Styles ==============*/
 
 .header-section{
   height: 30vh;
@@ -624,4 +624,20 @@ a{
   .careers-section {
     margin: 10vh 27vw;
   }
+}
+
+
+/* ============== Menu Page Styles ==============*/
+
+
+.menuHeader-bg{
+  background-image: url(./media/headers/ktryna-wq7VErajAaE-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 100%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
 }
