@@ -18,7 +18,7 @@ a{
 /* ============== Header Styles ==============*/
 
 .site-header{
-    background-color: #122940;
+    background: transparent;
     display: flex;
     align-items: center;
     height: 65px;
@@ -365,8 +365,8 @@ a{
 
 /* FOOTER STYLES */
 .site_footer {
-  background-color: #282a3e;
-  color: #fff;
+  background-color: #122940;
+  color: #CF9D3A;
   padding: 40px 0;
   text-align: center;
 }
@@ -382,19 +382,21 @@ a{
 .social_media_icons i {
   font-size: 36px;
   margin: 0 15px;
-  color: #fff;
+  color: #CF9D3A;
   transition: color 0.3s ease-in-out;
 }
 
 .social_media_icons i:hover {
-  color: #b3ff5c;
+  color: white;
 }
 
 .footer_nav_ul {
   list-style: none;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .footer_nav_ul li {
@@ -402,14 +404,14 @@ a{
 }
 
 .footer_nav_ul a {
-  color: #fff;
+  color: #CF9D3A;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease-in-out;
 }
 
 .footer_nav_ul a:hover {
-  color: #b3ff5c;
+  color: white;
 }
 
   /* ============== Header Styles ==============*/
