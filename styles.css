@@ -742,9 +742,54 @@ a{
   font-size: 3rem;
 }
 
-@media (min-width:) {
+.mtt-card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 5rem;
+  
+  img{
+    width: 270px;
+  }
+}
+
+@media (min-width:600px) {
+  .mtt-card{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width: 200px;
+    }
+  }
+  .card-text{
+    padding: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .mtt-card{
+    width: 68%;
+    margin: 0 auto;
+    flex-direction: row;
+    margin-top: 5rem;
+    img{
+      width: 350px;
+    }
+  }
+  .mtt-header-h1{
+    font-size: 6rem
+  }
+}
+
+@media (min-width: 1600px) {
+  .mtt-card{
+    width: 50%;
+  }
   
 }
+
 
 
 
