@@ -4,6 +4,7 @@ body {
     font-family: 'Futura PT', sans-serif;
     font-size: 1.25rem;
     background-image: url(./media/assets/site-bg.jpg);
+    background-size: contain;
     background-color: #122940;
     z-index: 43;
     color: #CF9D3A;
