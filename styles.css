@@ -382,7 +382,7 @@ a{
 
 /* FOOTER STYLES */
 .site_footer {
-  background-color: #444;
+  background-color: #122940;
   color: #CF9D3A;
   padding: 40px 0;
   text-align: center;
@@ -432,7 +432,11 @@ a{
   font-size: 18px;
   transition: color 0.3s ease-in-out;
   position: relative;
-}a::before {
+}
+.footer-a{
+  position: relative;
+}
+.footer-a::before {
   content: "";
   position: absolute;
   display: block;
@@ -443,7 +447,8 @@ a{
   background-color: white;
   transform: scaleX(0);
   transition: transform 0.3s ease;
-}a:hover::before {
+}
+.footer-a:hover::before {
   transform: scaleX(1);
 }
 
