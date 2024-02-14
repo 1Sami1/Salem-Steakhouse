@@ -724,6 +724,39 @@ a{
  
 }
 
+/* ============== Meet The Team Styles ==============*/
+
+.mttHeader-bg{
+  background-image: url(./media/headers/AdobeStock_626472323.jpeg);
+  background-size: cover;
+  background-position: 0 50%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+.mtt-header-h1{
+  font-size: 3rem;
+}
+
+@media (min-width:) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* FAQ STYLE PAGE */
 
 .site-header {
@@ -746,3 +779,5 @@ p {
   color: #ddd;
   margin-top: 5px;
 }
+
+
