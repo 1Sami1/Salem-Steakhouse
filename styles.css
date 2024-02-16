@@ -653,6 +653,10 @@ a{
   margin-bottom: 5rem;
 }
 
+.careers-info > ul {
+  color: #ddd;
+}
+
 @media (min-width: 400px) {
   .careers-section {
     margin: 10vh 8vw 0vh 5vw;
