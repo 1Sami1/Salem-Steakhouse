@@ -3,7 +3,8 @@ body {
     padding: 0;
     font-family: 'Futura PT', sans-serif;
     font-size: 1.25rem;
-    /* background-image: url(./media/assets/site-bg.jpg); */
+    background-image: url(./media/assets/site-bg.jpg);
+    background-size: contain;
     background-color: #122940;
     z-index: 43;
     color: #CF9D3A;
@@ -26,7 +27,7 @@ a{
 /* ============== Header Styles ==============*/
 
 .site-header{
-    background: transparent;
+    background-color: #122940;
     display: flex;
     align-items: center;
     height: 65px;
@@ -53,6 +54,20 @@ a{
     li a{
         text-decoration: none;
         color: #CF9D3A;
+        position: relative;
+    }a::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2.5px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }a:hover::before {
+      transform: scaleX(1);
     }
 }
 .nav-ul > li {
@@ -367,7 +382,7 @@ a{
 
 /* FOOTER STYLES */
 .site_footer {
-  background-color: #444;
+  background-color: #122940;
   color: #CF9D3A;
   padding: 40px 0;
   text-align: center;
@@ -416,6 +431,25 @@ a{
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease-in-out;
+  position: relative;
+}
+.footer-a{
+  position: relative;
+}
+.footer-a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.footer-a:hover::before {
+  transform: scaleX(1);
 }
 
 .footer_nav_ul a:hover {
@@ -724,6 +758,99 @@ a{
  
 }
 
+/* ============== Meet The Team Styles ==============*/
+
+.mttHeader-bg{
+  background-image: url(./media/headers/AdobeStock_626472323.jpeg);
+  background-size: cover;
+  background-position: 0 50%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+.mtt-header-h1{
+  font-size: 3rem;
+}
+
+.mtt-card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 5rem;
+  
+  img{
+    width: 270px;
+  }
+}
+
+@media (min-width:600px) {
+  .mtt-card{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    img{
+      width: 200px;
+    }
+  }
+  .card-text{
+    padding: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .mtt-card{
+    width: 68%;
+    margin: 0 auto;
+    flex-direction: row;
+    margin-top: 5rem;
+    img{
+      width: 350px;
+    }
+  }
+  .mtt-header-h1{
+    font-size: 6rem
+  }
+}
+
+@media (min-width: 1600px) {
+  .mtt-card{
+    width: 50%;
+  }
+  
+}
+
+
+
+/* ============== Contact Page Styles ==============*/
+
+.contactHeader-bg{
+  background-image: url(./media/headers/hermes-rivera-aK6WGqxyHFw-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 50%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* FAQ STYLE PAGE */
 
 .site-header {
@@ -746,3 +873,5 @@ p {
   color: #ddd;
   margin-top: 5px;
 }
+
+
