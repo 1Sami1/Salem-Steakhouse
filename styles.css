@@ -847,11 +847,39 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: -6rem;
+  top: -6rem; 
   z-index: -5;
 }
 
+.email > input, .phone > input, .fName > input, .lName > input{
+  width: 99%;
+  margin-bottom: 2vh;
+}
 
+.contact-h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+@media (min-width: 400px) {
+  .contact-section {
+    margin: 10vh 5vw;
+  }
+  .directions-section > iframe{
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .contact-section {
+    margin: 10vh 29vw;
+  }
+  .directions-section > iframe {
+    width: 100%;
+  }
+}
 
 
 
@@ -893,12 +921,12 @@ a {
 .FAQHeader-bg {
   background-image: url(./media/headers/AdobeStock_703002105.jpeg);
   background-size: cover;
-  background-position: 0 90%;
+  background-position: 0 50%;
   width: 100%;
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem; 
   z-index: -5;
 }
 
@@ -910,4 +938,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#main-image{
+  border-radius: 25px;
 }
