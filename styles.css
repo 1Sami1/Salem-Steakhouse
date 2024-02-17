@@ -267,7 +267,7 @@ a{
     margin-bottom: 3rem;
     img{
         width: 200px;
-        height: 140px;
+        height: 200px;
         border-radius: 20px;
     }
 }
@@ -294,7 +294,7 @@ a{
     .tile-section{
       img{
         width: 300px;
-        height: 220px;
+        height: 300px;
       }
     }
     .overlay{
@@ -304,8 +304,8 @@ a{
 @media (min-width: 1200px) {
   .tile-section{
     img{
-      width: 410px;
-      height: 345px;
+      width: 400px;
+      height: 400px;
     }
   }
   .tile{
@@ -526,7 +526,7 @@ a{
 }
 
 .welcome-h2{
-  text-align: left;
+  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
@@ -791,6 +791,13 @@ a{
   }
 }
 
+.mtt-card-h2 {
+  text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
 @media (min-width:600px) {
   .mtt-card{
     width: 90%;
@@ -845,6 +852,16 @@ a{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* FAQ STYLE PAGE */
 
 .site-header {
@@ -856,6 +873,7 @@ a{
 .faq-section {
   max-width: 800px;
   margin: 20px auto;
+  margin-top: 10vh;
   padding: 20px;
   border: 1px solid;
   border-radius: 8px;
@@ -863,10 +881,33 @@ a{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 p {
   color: #ddd;
   margin-top: 5px;
 }
 
+a {
+  color: #CF9D3A;
+}
 
+.FAQHeader-bg {
+  background-image: url(./media/headers/AdobeStock_703002105.jpeg);
+  background-size: cover;
+  background-position: 0 90%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+
+
+/* ============== Slider Styles ==============*/
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
