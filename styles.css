@@ -4,7 +4,7 @@ body {
     font-family: 'Futura PT', sans-serif;
     font-size: 1.25rem;
     background-image: url(./media/assets/site-bg.jpg);
-    background-size: contain;
+    background-size: cover;
     background-color: #122940;
     z-index: 43;
     color: #CF9D3A;
@@ -27,7 +27,7 @@ a{
 /* ============== Header Styles ==============*/
 
 .site-header{
-    background-color: #122940;
+    /* background-color: #122940; */
     display: flex;
     align-items: center;
     height: 65px;
@@ -183,7 +183,7 @@ a{
   /* ============== Hero Section Styles ==============*/
 
 .hero-section{
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -194,9 +194,9 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   opacity: 100%;
-  z-index: 2;
+  z-index: -10;
 }
 .hero-image-overlay{
   height: 50vh;
@@ -205,8 +205,8 @@ a{
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
-  z-index: 3;
+  top: -6rem;
+  z-index: -9;
 
 }
 .hero-text{
@@ -459,21 +459,21 @@ a{
   /* ============== About Page Header Styles ==============*/
 
 .header-section{
-  height: 30vh;
+  height: 40vh;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .header-image-overlay{
-  height: 50vh;
+  height: 70vh;
   background-color: #122940;
-  opacity: 50%;
+  opacity: 60%;
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -3;
 
 }
@@ -484,18 +484,17 @@ a{
 
 .header-h1{
   font-size: 4rem;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
+  margin-top: 6rem;
 }
 
 @media (min-width: 400px) {
   .header-section{
-    height: 20vh;
+    height: 40vh;
   }
 }
 @media (min-width: 1000px) {
   .header-section{
-    height: 40vh;
+    height: 50vh;
   }
   .header-text{
     top: 30%;
@@ -522,7 +521,7 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
@@ -680,7 +679,7 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
@@ -772,12 +771,13 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
 .mtt-header-h1{
   font-size: 3rem;
+  margin-top: 6rem;
 }
 
 .mtt-card{
@@ -840,19 +840,9 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* FAQ STYLE PAGE */
@@ -869,6 +859,7 @@ a{
   padding: 20px;
   border: 1px solid;
   border-radius: 8px;
+  margin-top: 5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
