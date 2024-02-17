@@ -13,7 +13,7 @@
     <div class="pattern-overlay">
         <header class="site-header">
             <div class="header-logo">
-                <Img  src="./media/assets/salem_logo_v2.png" alt="Salem steakhouse Logo"></Img>
+                <a href="./index.html"><Img src="./media/assets/salem_logo_v2.png" alt="Salem steakhouse Logo"></Img></a>
             </div>
             <nav class="site-nav">
                 <input id="menu-toggle" type="checkbox" />
@@ -42,14 +42,14 @@
             </section>
             <section class="tile-section">
                 <div class="tile">
-                    <img src="./media/homepage/sebastian-doll-wxt4m8ECpgM-unsplash.jpg" alt="Tile 1">
+                    <img src="./media/homepage/sebastian-doll-wxt4m8ECpgM-unsplash (1).jpg" alt="Tile 1">
                     <div class="overlay">
                         <h2>Eat</h2>
                     </div>
                 </div>
             
                 <div class="tile">
-                    <img src="./media/homepage/kevin-kelly-PPneSBqfCCU-unsplash.jpg" alt="Tile 2">
+                    <img src="./media/homepage/hermes-rivera-aK6WGqxyHFw-unsplash (1).jpg" alt="Tile 2">
                     <div class="overlay">
                         <h2>Drink</h2>
                     </div>
@@ -64,44 +64,38 @@
             </section>
             <section class="eom-section">
                 <h2 class="eom-h2">Explore Our Menu</h2>
+
                 <!-- carousel will be here to display menu items -->
 
-                
-                <img class="eom-image" src="./media/menu/melody-zimmerman-yaOdjkVGhuo-unsplash.jpg" alt="menu-item food-item1">
+            <div class="slider">
+                <div style="text-align:center;">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:center;">
+                                <div><img id="main-image" alt="Main Image" /></div>
+                        
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/first.png" id="first-btn" />            
+                                <img src="images/prev.png" id="prev-btn" />
+                            </td>
+                            <td>
+                                <div id="thumbnail-area"></div>	        
+                            </td>
+                            <td>
+                                <img src="images/next.png" id="next-btn" />            
+                                <img src="images/last.png" id="last-btn" />
+                            </td>
+                        </tr>	    
+                    </table>       
+                </div>
+            </div>
+
                 <button class="eom-btn"><a href="./menu.html">View Menu</a></button>
             </section>
         </main>
-
-        <div style="text-align:center;">
-            <table>
-                <tr>
-                    <td></td>
-                    <td style="text-align:center;">
-                        <div><img id="main-image" alt="Main Image" /></div>
-    
-                        <!-- you may or may not use this hidden textbox-->
-                        <div><input id="current-index" /></div>    
-                    </td>
-                    <td></td>
-                
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/first.png" id="first-btn" />            
-                        <img src="images/prev.png" id="prev-btn" />
-                    </td>
-                    <td>
-                        <div id="thumbnail-area"></div>	        
-                    </td>
-                    <td>
-                        <img src="images/next.png" id="next-btn" />            
-                        <img src="images/last.png" id="last-btn" />
-                    </td>
-                </tr>	    
-            </table>       
-        </div>
-
-
 
         <footer class="site_footer">
             <div class="social_media">
@@ -121,8 +115,6 @@
             </nav>
         </footer>
     </div>  
-
-    
 
     <script>
 
