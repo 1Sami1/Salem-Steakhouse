@@ -4,7 +4,7 @@ body {
     font-family: 'Futura PT', sans-serif;
     font-size: 1.25rem;
     background-image: url(./media/assets/site-bg.jpg);
-    background-size: contain;
+    background-size: cover;
     background-color: #122940;
     z-index: 43;
     color: #CF9D3A;
@@ -27,7 +27,7 @@ a{
 /* ============== Header Styles ==============*/
 
 .site-header{
-    background-color: #122940;
+    /* background-color: #122940; */
     display: flex;
     align-items: center;
     height: 65px;
@@ -95,7 +95,7 @@ a{
     background-color: #CF9D3A;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
     position: absolute;
-    height: 6px;
+    height: 2.7px;
     width: 32px;
     border-radius: 3px;
   }
@@ -183,7 +183,7 @@ a{
   /* ============== Hero Section Styles ==============*/
 
 .hero-section{
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -194,9 +194,9 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   opacity: 100%;
-  z-index: 2;
+  z-index: -10;
 }
 .hero-image-overlay{
   height: 50vh;
@@ -205,8 +205,8 @@ a{
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
-  z-index: 3;
+  top: -6rem;
+  z-index: -9;
 
 }
 .hero-text{
@@ -267,7 +267,7 @@ a{
     margin-bottom: 3rem;
     img{
         width: 200px;
-        height: 140px;
+        height: 200px;
         border-radius: 20px;
     }
 }
@@ -294,7 +294,7 @@ a{
     .tile-section{
       img{
         width: 300px;
-        height: 220px;
+        height: 300px;
       }
     }
     .overlay{
@@ -304,8 +304,8 @@ a{
 @media (min-width: 1200px) {
   .tile-section{
     img{
-      width: 410px;
-      height: 345px;
+      width: 400px;
+      height: 400px;
     }
   }
   .tile{
@@ -459,21 +459,21 @@ a{
   /* ============== About Page Header Styles ==============*/
 
 .header-section{
-  height: 30vh;
+  height: 40vh;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .header-image-overlay{
-  height: 50vh;
+  height: 70vh;
   background-color: #122940;
-  opacity: 50%;
+  opacity: 60%;
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -3;
 
 }
@@ -484,18 +484,17 @@ a{
 
 .header-h1{
   font-size: 4rem;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
+  margin-top: 6rem;
 }
 
 @media (min-width: 400px) {
   .header-section{
-    height: 20vh;
+    height: 40vh;
   }
 }
 @media (min-width: 1000px) {
   .header-section{
-    height: 40vh;
+    height: 50vh;
   }
   .header-text{
     top: 30%;
@@ -522,12 +521,12 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
 .welcome-h2{
-  text-align: left;
+  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
@@ -607,7 +606,7 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
@@ -680,7 +679,7 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
@@ -772,12 +771,13 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
 .mtt-header-h1{
   font-size: 3rem;
+  margin-top: 6rem;
 }
 
 .mtt-card{
@@ -789,6 +789,13 @@ a{
   img{
     width: 270px;
   }
+}
+
+.mtt-card-h2 {
+  text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }
 
 @media (min-width:600px) {
@@ -840,7 +847,7 @@ a{
   max-width: 100%;
   position: absolute;
   height: 100%;
-  top: 0;
+  top: -6rem;
   z-index: -5;
 }
 
@@ -866,16 +873,41 @@ a{
 .faq-section {
   max-width: 800px;
   margin: 20px auto;
+  margin-top: 10vh;
   padding: 20px;
   border: 1px solid;
   border-radius: 8px;
+  margin-top: 5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 p {
   color: #ddd;
   margin-top: 5px;
 }
 
+a {
+  color: #CF9D3A;
+}
 
+.FAQHeader-bg {
+  background-image: url(./media/headers/AdobeStock_703002105.jpeg);
+  background-size: cover;
+  background-position: 0 90%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: -5;
+}
+
+
+
+/* ============== Slider Styles ==============*/
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
