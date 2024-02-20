@@ -596,6 +596,38 @@ a{
   }
 }
 
+/* Styles for reso  */
+
+.reservation-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.reservation-form button {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #282a3e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* ============== Careers Page Styles ==============*/
 
 .CareersHeader-bg{
