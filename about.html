@@ -43,37 +43,33 @@
         <h1 class="welcome-h2">Welcome!</h1>
         <p class="welcome-p">For more than three decades, Salem’s Steakhouse has solidified its standing as the best dining experience in Vancouver. With dedication to serving only the freshest, locally-sourced ingredients, we offer professionally prepared cuisine from a passionate culinary team – all graciously served to you in an elegant, sophisticated environment in the heart of the city.</p>
 
-        <section class="reservation-section">
-            <h2 class="h2-reso">Make a Reservation</h2>
-    
-            <form action="#" method="post" class="reservation-form">
-                <label  for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-    
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-    
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required>
-    
-                <label for="party-size">Party Size:</label>
-                <input type="number" id="party-size" name="party-size" min="1" required>
-    
-                <label for="special-requests">Special Requests:</label>
-                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
-    
-                <button type="submit">Submit Reservation</button>
-            </form>
-        </section>
-                            
-    </section>
+<div class="slider">
+    <div style="text-align:center;">
+        <table>
+            <tr>
+                <td></td>
+                <td style="text-align:center;">
+                    <div><img id="main-image" alt="Main Image" /></div>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/first.png" id="first-btn" />            
+                    <img src="images/prev.png" id="prev-btn" />
+                </td>
+                <td>
+                    <div id="thumbnail-area"></div>	        
+                </td>
+                <td>
+                    <img src="images/next.png" id="next-btn" />            
+                    <img src="images/last.png" id="last-btn" />
+                </td>
+            </tr>	    
+        </table>       
+    </div>
+</div>
 
+<button class="eom-btn"><a href="./menu.html">View Menu</a></button>
+</section>
 </main>
 
 <footer class="site_footer">
@@ -86,14 +82,139 @@
     </div>
     <nav class="footer_nav">
         <ul class="footer_nav_ul">
+            <li><a class="footer-a" href="./reservation.html">Reserve</a></li>
             <li><a class="footer-a" href="./contact.html">Contact</a></li>
             <li><a class="footer-a" href="./careers.html">Careers</a></li>
             <li><a class="footer-a" href="./menu.html">Menu</a></li>
             <li><a class="footer-a" href="./meet-the-team.html">Our Team</a></li>
-            <li><a class="footer-a" href="faq.html">FAQs</a></li>
+            <li><a class="footer-a" href="./faq.html">FAQs</a></li>
         </ul>
     </nav>
-    </footer>
-    
+  </footer> 
+
+<script>
+
+const images_list  = ["main","back","back2","side","front"]
+const root_file = "images/"
+const airtime_file = "_airtime.png"
+const thumb_file = "_thumb.png"
+let main_img = 0
+
+const first_load = () => { 
+
+    set_main_image(main_img)
+    set_thumbnails()
+    update_thumbnails(main_img)
+
+}
+
+const set_main_image = (index) => {
+
+    document.querySelector("#main-image").src = root_file + images_list[index] + airtime_file
+
+    main_img = index
+
+    update_thumbnails(index);
+
+}
+
+const set_thumbnails = () => {
+
+    images_list.forEach( (image_name, index) => {
+
+    const new_thumbnail = document.createElement("img") 
+
+    new_thumbnail.src = root_file + image_name + thumb_file
+
+    new_thumbnail.className = "clickable"
+
+    new_thumbnail.addEventListener("click", () => {
+        set_main_image(index)
+})
+
+document.querySelector("#thumbnail-area").append(new_thumbnail)
+
+})
+
+} 
+
+
+const update_thumbnails = (current_index) => {
+
+const thumbnails = document.querySelectorAll("#thumbnail-area img");
+
+thumbnails.forEach((thumbnail, index) => {
+
+    if (index === current_index) {
+
+    thumbnail.style.opacity = "1.0";
+    thumbnail.style.borderRadius = "8px";
+    thumbnail.style.margin = "0rem 0.5rem";
+    thumbnail.style.border = "solid 2px #CF9D3A";
+
+    } else {
+
+    thumbnail.style.opacity = "0.25";
+    thumbnail.style.borderRadius = "8px";
+    thumbnail.style.margin = "0rem 0.5rem";
+    thumbnail.style.border = "none";
+    }});
+
+}
+
+const set_nav_first = () => {
+
+const first_btn = document.querySelector("#first-btn")
+first_btn.addEventListener("click", () =>{
+set_main_image(0)
+})
+
+}
+set_nav_first()
+
+const set_nav_last = () => {
+
+const last_btn = document.querySelector("#last-btn")
+last_btn.addEventListener("click", () =>{
+set_main_image(images_list.length - 1)
+})
+
+}
+set_nav_last()
+
+const set_nav_next = () => {
+
+const thumbnails = document.querySelectorAll("#thumbnail-area img");
+
+const next_btn = document.querySelector("#next-btn")
+next_btn.addEventListener("click", ()=>{
+
+const next_index = (main_img >= images_list.length - 1) ? 0 : main_img + 1
+set_main_image(next_index)
+
+})
+
+}
+set_nav_next()
+
+const set_nav_prev = () => {
+
+const thumbnails = document.querySelectorAll("#thumbnail-area img");
+
+const next_btn = document.querySelector("#prev-btn")
+next_btn.addEventListener("click", ()=>{
+
+const prev_index = (main_img <= 0 ) ? images_list.length - 1 : main_img- 1
+
+set_main_image(prev_index)
+
+})
+
+}	
+set_nav_prev()
+
+window.addEventListener("load", first_load);
+
+</script>
 </body>
 </html>

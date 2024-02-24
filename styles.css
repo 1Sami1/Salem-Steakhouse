@@ -44,6 +44,8 @@ a{
     margin-left: 100px;
     img{
         width: 90px;
+        -webkit-filter: drop-shadow(5px 5px 5px #000000);
+        filter: drop-shadow(5px 5px 5px #000000);
     }
 }
 .nav-ul{
@@ -55,6 +57,7 @@ a{
         text-decoration: none;
         color: #CF9D3A;
         position: relative;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.75)
     }a::before {
       content: "";
       position: absolute;
@@ -98,6 +101,8 @@ a{
     height: 2.7px;
     width: 32px;
     border-radius: 3px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
   }
   .menu-button::before {
     content: '';
@@ -263,8 +268,9 @@ a{
 
 .tile-section{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
     img{
         width: 200px;
         height: 200px;
@@ -287,7 +293,6 @@ a{
     font-size: 2.5rem;
     text-transform: uppercase;
     left: 50%;
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }
 
 @media (min-width: 600px) {
@@ -324,6 +329,7 @@ a{
   margin-bottom: 5rem;
 }
 .eom-h2{
+  margin-top: 2vmin;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -335,26 +341,29 @@ a{
   width: 300px;
   border-radius: 30px;
 }
+
 .eom-btn{
   display: block;
   margin: 0 auto;
-}
-
-.eom-btn{
   margin-top: 2rem;
   background-color: #CF9D3A;
   border: none;
   padding: 10px;
   border-radius: 5px;
+  transition: 0.3s ease-in-out;
   a{
     text-decoration: none;
     color: #282a3e;
   }
 }
 
+.eom-btn:hover{
+    background-color: white;
+}
 
 @media (min-width: 600px) {
   .eom-h2{
+    margin-top: 2vmin;
     font-size: 3.2rem;
   }
 
@@ -375,6 +384,7 @@ a{
     margin-top: 2rem;
   }
   .eom-btn{
+    margin-top: 2vmin;
     font-size: 1.5rem;
   }
 }
@@ -475,7 +485,6 @@ a{
   width: 100%;
   top: -6rem;
   z-index: -3;
-
 }
 .header-text{
   font-family: "espoir";
@@ -484,7 +493,7 @@ a{
 
 .header-h1{
   font-size: 4rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 400px) {
@@ -526,6 +535,7 @@ a{
 }
 
 .welcome-h2{
+  margin-top: 2vmin;
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -575,7 +585,7 @@ a{
 
 @media (min-width: 400px) {
   .welcome-section {
-    margin: 10vh 5vw;
+    margin: 2vh 5vw;
   }
 }
 @media (min-width: 600px) {
@@ -589,7 +599,7 @@ a{
 }
 @media (min-width: 1000px) {
   .welcome-section {
-    margin: 10vh 27vw;
+    margin: 2vh 27vw;
   }
   .gallery-image{
     width: 900px;
@@ -600,7 +610,7 @@ a{
 /* Styles for reso  */
 
 .reservation-section{
-  margin-top: 10rem;
+  margin-top: 2em;
   padding: 15px;
 }
 
@@ -619,6 +629,7 @@ a{
 
 .reservation-form label {
   display: block;
+  margin-top: 4px;
   margin-bottom: 4px;
 }
 
@@ -635,10 +646,16 @@ a{
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  background-color: #CF9D3A;
   color: #282a3e;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.reservation-form button:hover{
+  background-color: white; 
 }
 
 /* ============== Careers Page Styles ==============*/
@@ -686,11 +703,16 @@ a{
   padding: 10px;
   border-radius: 5px;
   float: right;
+  transition: 0.3s ease-in-out;
 
   a{
     text-decoration: none;
     color: #282a3e;
   }
+}
+
+.careers-btn:hover {
+  background-color: white;
 }
 
 .careers-card{
@@ -730,13 +752,18 @@ a{
 
 .menus-section{
   text-align: center;
-  margin-top: 8rem;
+  margin-top: 2rem;
   margin-bottom: 10rem;
   a{
     line-height: 2rem;
     color: #CF9D3A;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+    transition: 0.3s ease-in-out;
   }
+}
+
+.menus-section a:hover{
+    color: white;
 }
 
 .chefs-reco-section{
@@ -896,21 +923,44 @@ a{
   z-index: -5;
 }
 
-.email > input, .phone > input, .fName > input, .lName > input{
-  width: 99%;
-  margin-bottom: 2vh;
+.contact-section {
+margin-top: 2vh;
+padding: 15px;
+}
+
+.form-section {
+display: flex;
+flex-direction: column;
+gap: 16px;
+max-width: 1000px;
+margin: auto;
+}
+
+.contact-section input{
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.contact-section label, .contact-section textarea {
+  display: block;
+  margin-top: 4vmin;
+  margin-bottom: 4px;
 }
 
 .contact-h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    margin-top: -2vmin;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }
 
 @media (min-width: 400px) {
   .contact-section {
-    margin: 10vh 5vw;
+    margin: 2vh 5vw;
   }
   .directions-section > iframe{
     width: 100%;
@@ -919,7 +969,7 @@ a{
 }
 @media (min-width: 1000px) {
   .contact-section {
-    margin: 10vh 29vw;
+    margin: 2vh 29vw;
   }
   .directions-section > iframe {
     width: 100%;
@@ -959,8 +1009,13 @@ p {
   margin-top: 5px;
 }
 
-a {
+.faq-item a {
   color: #CF9D3A;
+  transition: 0.3s ease-in-out;
+}
+
+.faq-item a:hover {
+  color: white;
 }
 
 .FAQHeader-bg {
@@ -973,6 +1028,7 @@ a {
   height: 100%;
   top: -6rem; 
   z-index: -5;
+  
 }
 
 
@@ -983,8 +1039,89 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  width: 50%;
 }
 
-#main-image{
+#main-image {
   border-radius: 25px;
+  width: 800px;
+}
+
+@media (min-width: 320px) {
+ 
+
+  #main-image{
+    width: 300px;
+  }
+
+  #thumbnail-area {
+    display: none;
+  }
+
+  #first-btn, #last-btn, #next-btn, #prev-btn {
+      position: absolute;
+      width: 35px;
+  }
+
+  #last-btn {
+      right: 1.5rem;
+  }
+
+  #next-btn{
+      right: 4rem;
+  }
+
+  #prev-btn {
+      left: 4rem;
+  }
+
+  #first-btn {
+      left: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+ 
+  #main-image {
+    width: 700px;
+  }
+
+  #thumbnail-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #first-btn, #last-btn, #next-btn, #prev-btn {
+    position: inherit;
+    width: 50px;
+  }
+
+}
+
+/* Reservation Styles */
+
+.reservationHeader-bg{
+  background-image: url(./media/headers/AdobeStock_295053226.jpeg);
+  background-size: cover;
+  background-position: 0 100%;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  top: -6rem;
+  z-index: -5;
+}
+
+.reservation-section {
+  margin-top: 2vh;
+}
+
+.reservation-h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: -4vmin;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }

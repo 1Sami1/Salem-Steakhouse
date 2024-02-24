@@ -10,24 +10,23 @@
 
 </head>
 <body>
-    <div class="pattern-overlay">
-        <header class="site-header">
-            <div class="header-logo">
-                <a href="./index.html"><Img src="./media/assets/salem_logo_v2.png" alt="Salem steakhouse Logo"></Img></a>
-            </div>
-            <nav class="site-nav">
-                <input id="menu-toggle" type="checkbox" />
-                <label class="menu-button-container" for="menu-toggle">
-                    <div class="menu-button"></div>
-                </label>
-                <ul class="nav-ul">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./menu.html">Menu</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header class="site-header">
+        <div class="header-logo">
+            <a href="./index.html"><Img src="./media/assets/salem_logo_v2.png" alt="Salem steakhouse Logo"></Img></a>
+        </div>
+        <nav class="site-nav">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+                <div class="menu-button"></div>
+            </label>
+            <ul class="nav-ul">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
         <main class="site-main">
             <section class="hero-section">
@@ -62,42 +61,14 @@
                     </div>
                 </div>
             </section>
-            <section class="eom-section">
-                <h2 class="eom-h2">Explore Our Menu</h2>
 
-                <!-- carousel will be here to display menu items -->
-
-                
-                <img class="eom-image" src="./media/menu/melody-zimmerman-yaOdjkVGhuo-unsplash.jpg" alt="menu-item food-item1">
-                <button class="eom-btn"><a href="./menu.html">View Menu</a></button>
+            <section class="reservation-section">
+                <h2 class="eom-h2">Dine-in With Us</h2>
+                           
+                <button class="eom-btn"><a href="./reservation.html">Reserve a Table</a></button>
             </section>
+
         </main>
-
-    <div class="slider">
-        <div style="text-align:center;">
-            <table>
-                <tr>
-                    <td></td>
-                    <td style="text-align:center;">
-                        <div><img id="main-image" alt="Main Image" /></div>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="images/first.png" id="first-btn" />            
-                        <img src="images/prev.png" id="prev-btn" />
-                    </td>
-                    <td>
-                        <div id="thumbnail-area"></div>	        
-                    </td>
-                    <td>
-                        <img src="images/next.png" id="next-btn" />            
-                        <img src="images/last.png" id="last-btn" />
-                    </td>
-                </tr>	    
-            </table>       
-        </div>
-    </div>
-
 
         <footer class="site_footer">
             <div class="social_media">
@@ -109,16 +80,16 @@
             </div>
             <nav class="footer_nav">
                 <ul class="footer_nav_ul">
+                    <li><a class="footer-a" href="./reservation.html">Reserve</a></li>
                     <li><a class="footer-a" href="./contact.html">Contact</a></li>
                     <li><a class="footer-a" href="./careers.html">Careers</a></li>
                     <li><a class="footer-a" href="./menu.html">Menu</a></li>
                     <li><a class="footer-a" href="./meet-the-team.html">Our Team</a></li>
-                    <li><a class="footer-a" href="faq.html">FAQs</a></li>
+                    <li><a class="footer-a" href="./faq.html">FAQs</a></li>
                 </ul>
             </nav>
-        </footer>
-    </div>  
-
+          </footer>
+    
     <script>
 
 		const images_list  = ["main","back","back2","side","front"]
@@ -171,10 +142,23 @@
 			const thumbnails = document.querySelectorAll("#thumbnail-area img");
 
 			thumbnails.forEach((thumbnail, index) => {
-				thumbnail.style.opacity = (index === current_index) ? "1.0" : "0.75";
-			});
 
-		} 
+                if (index === current_index) {
+
+                thumbnail.style.opacity = "1.0";
+                thumbnail.style.borderRadius = "8px";
+                thumbnail.style.margin = "0rem 0.5rem";
+                thumbnail.style.border = "solid 2px #CF9D3A";
+
+                } else {
+
+                thumbnail.style.opacity = "0.25";
+                thumbnail.style.borderRadius = "8px";
+                thumbnail.style.margin = "0rem 0.5rem";
+                thumbnail.style.border = "none";
+                }});
+    
+		}
 	
 		const set_nav_first = () => {
 
