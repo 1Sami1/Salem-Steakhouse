@@ -309,8 +309,8 @@ a{
 @media (min-width: 1200px) {
   .tile-section{
     img{
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
     }
   }
   .tile{
@@ -756,6 +756,7 @@ a{
   margin-bottom: 10rem;
   a{
     line-height: 2rem;
+    font-size: 2rem;
     color: #CF9D3A;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
     transition: 0.3s ease-in-out;
@@ -954,7 +955,26 @@ margin: auto;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    margin-top: -2vmin;
+    margin-top: 2rem;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+}
+
+.contact-submit{
+  padding: 10px;
+  background-color: #CF9D3A;
+  color: #282a3e;
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.directions-h2{
+  text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 9rem;
     text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
 }
 
