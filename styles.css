@@ -995,7 +995,7 @@ margin: auto;
 
 .faq-section {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 20px;
   margin-top: 10vh;
   padding: 20px;
   border: 1px solid;
@@ -1028,10 +1028,13 @@ p {
   height: 100%;
   top: -6rem; 
   z-index: -5;
-  
 }
 
-
+@media (min-width: 900px) {
+  .faq-section{
+    margin: 0 auto
+  }
+}
 
 /* ============== Slider Styles ==============*/
 
