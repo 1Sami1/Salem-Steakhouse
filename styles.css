@@ -960,12 +960,14 @@ margin: auto;
 }
 
 .contact-submit{
+  margin-top: 2.5vmin;
+  width: 100%;
   padding: 10px;
+  box-sizing: border-box;
   background-color: #CF9D3A;
   color: #282a3e;
-  margin-top: 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
